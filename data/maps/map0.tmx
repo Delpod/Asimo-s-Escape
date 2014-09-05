@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="evilrobot" value="data/gfx/evilrobot.png"/>
+  <property name="evilrobotstanding" value="data/gfx/evilrobotstanding.png"/>
+  <property name="exitgate" value="data/gfx/gate.png"/>
+  <property name="run" value="data/gfx/run.png"/>
+ </properties>
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" spacing="1">
+  <image source="data/gfx/tileset.png" width="198" height="198"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="20" height="15">
+  <properties>
+   <property name="collidable" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBhZQHKQmycPxExIWAGJzUxluzipbB4IkOJOaSLVEetOYs0DAfQwxoZHweADAIwFAZI=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyTZKAukBzE5jFS0SwQkB5h5rETkJensn20AsS6U5GmrhgF5AAAFLUBBA==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 3" width="20" height="15">
+  <object name="exitgate" type="GameObject" x="224" y="160">
+   <properties>
+    <property name="height" value="79"/>
+    <property name="textureID" value="exitgate"/>
+    <property name="width" value="77"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 2" width="20" height="15">
+  <properties>
+   <property name="interactive" value=""/>
+  </properties>
+  <object name="exitgate" type="ExitGate" x="576" y="288">
+   <properties>
+    <property name="height" value="79"/>
+    <property name="textureID" value="exitgate"/>
+    <property name="width" value="77"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 1" width="20" height="15">
+  <properties>
+   <property name="collidable" value=""/>
+  </properties>
+  <object name="player" type="Player" x="192" y="160">
+   <properties>
+    <property name="textureID" value="run"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
