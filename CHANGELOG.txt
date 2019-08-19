@@ -1,0 +1,14 @@
+Changelog
+
+1.0.2
+* Game pause if window lost focus
+* Clicking inside window gain focus and interaction works
+
+1.0.1
++ [W] key over interactive object
++ Left & Right controlls
+* Robots now cand just stand, more effective, less buggy
+* some maps were changed a little
+
+1.0
+Initial, Jam Release
